@@ -3,3 +3,70 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+:root {
+	/* Paleta principal */
+	--color-primary: #a8d5ba; /* Verde Suave */
+	--color-secondary: #1e5631; /* Verde Escuro */
+	--color-white: #ffffff; /* Branco */
+	--color-light-gray: #eaeaea; /* Cinza Claro */
+	--color-gold: #ffd700; /* Dourado */
+
+	/* Cores complementares */
+	--color-hover-primary: #8cc29b; /* Verde Suave Escuro */
+	--color-hover-secondary: #ffc107; /* Dourado Claro */
+
+	--color-border: #d4d4d4; /* Cinza Médio */
+
+	--color-background: #f7f7f7; /* Cinza Muito Claro */
+	--color-background-secondary: #f1edea; /* Bege Claro */
+
+	--color-shadow: rgba(0, 0, 0, 0.3); /* Sombra para profundidade */
+
+	--vertical-padding: 96px;
+	--horizontal-padding: 16px;
+}
+
+html,
+body {
+	min-height: 100vh;
+	color: var(--color-secondary);
+	font-size: 1rem;
+}
+
+body {
+	background: var(--color-background);
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: var(--font-cormorant), sans-serif;
+	font-weight: 700;
+}
+
+h5,
+h6 {
+	font-family: var(--font-cormorant), sans-serif;
+	font-weight: 400;
+}
+
+body,
+p,
+span,
+li {
+	font-family: var(--font-lato), sans-serif;
+	font-weight: 400;
+}
+
+strong {
+	font-family: var(--font-lato), sans-serif;
+	font-weight: 500;
+}
+
+button {
+	font-family: var(--font-montserrat), sans-serif;
+	font-size: 1rem;
+	font-weight: 500;
+}

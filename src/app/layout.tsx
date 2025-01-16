@@ -34,7 +34,7 @@ export default function RootLayout({
 			<body
 				className={`${cormorant.variable} ${lato.variable} ${montserrat.variable}`}
 			>
-				<main>{children}</main>
+				{children}
 			</body>
 		</html>
 	);
