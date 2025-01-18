@@ -1,0 +1,91 @@
+/* Seção de Diferenciais */
+.differentials {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: var(--vertical-padding) var(--horizontal-padding);
+	background-color: var(--color-background);
+	text-align: center;
+}
+
+.title {
+	font-size: 2rem;
+	color: var(--color-secondary);
+	margin-bottom: 2rem;
+}
+
+/* Grade de Diferenciais */
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsivo */
+	gap: 2rem;
+	justify-content: center;
+}
+
+/* Cartões de Diferenciais */
+.card {
+	background-color: var(--color-white);
+	border-radius: 8px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+	padding: 1.5rem;
+	text-align: center;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+	transform: scale(1.05);
+	box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Ícone */
+.iconWrapper {
+	width: 60px;
+	height: 60px;
+	margin: 0 auto 1rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--color-primary);
+	color: var(--color-white);
+	border-radius: 50%;
+	font-size: 1.5rem;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+	font-size: 2rem;
+}
+
+/* Conteúdo do Cartão */
+.cardTitle {
+	font-size: 1.25rem;
+	color: var(--color-secondary);
+	margin-bottom: 0.5rem;
+}
+
+.cardDescription {
+	font-size: 1rem;
+	color: var(--color-secondary);
+	line-height: 1.5;
+	margin-bottom: 0;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+	.title {
+		font-size: 2.5rem;
+	}
+
+	.grid {
+		gap: 2.5rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.grid {
+		grid-template-columns: repeat(3, 1fr); /* Exibe 3 colunas no desktop */
+	}
+
+	.title {
+		font-size: 3rem;
+	}
+}
