@@ -1,0 +1,88 @@
+.gallery {
+	max-width: 1200px; /* Limita a largura máxima no desktop */
+	margin: 0 auto; /* Centraliza a galeria */
+	padding: var(--vertical-padding) var(--horizontal-padding);
+	background-color: var(--color-background);
+	text-align: center;
+}
+
+.title {
+	font-size: 2rem;
+	color: var(--color-secondary);
+	margin-bottom: 1.5rem;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Colunas dinâmicas */
+	gap: 1rem;
+	justify-content: center;
+	grid-auto-flow: dense; /* Preenchimento otimizado */
+	grid-auto-rows: 200px; /* Altura base para as linhas */
+}
+
+.imageWrapper {
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease;
+}
+
+.imageWrapper:hover {
+	transform: scale(1.05);
+}
+
+.image {
+	width: 100%;
+	height: 100%; /* Preenche o espaço do grid */
+	object-fit: cover;
+}
+
+.large {
+	grid-row: span 2; /* Ocupar duas linhas */
+	grid-column: span 2; /* Ocupar duas colunas */
+}
+
+.small {
+	grid-row: span 1; /* Ocupar uma linha */
+	grid-column: span 1; /* Ocupar uma coluna */
+}
+
+.viewMore {
+	margin-top: 2rem;
+	padding: 0.75rem 1.5rem;
+	background-color: var(--color-primary);
+	color: var(--color-white);
+	font-size: 1rem;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.viewMore:hover {
+	background-color: var(--color-hover-primary);
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+	.grid {
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta o número de colunas */
+		gap: 1.5rem;
+	}
+
+	.title {
+		font-size: 2.5rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.grid {
+		grid-template-columns: repeat(3, 1fr); /* Três colunas no desktop */
+		grid-auto-rows: 300px; /* Altura maior para o desktop */
+	}
+
+	.title {
+		font-size: 3rem;
+	}
+}

@@ -1,0 +1,136 @@
+/* Seção de Pacotes */
+.packages {
+	max-width: 1200px; /* Limita a largura total da seção */
+	margin: 0 auto; /* Centraliza a seção */
+	padding: var(--vertical-padding) var(--horizontal-padding);
+	background-color: var(--color-background);
+	text-align: center;
+}
+
+.title {
+	font-size: 2rem;
+	color: var(--color-secondary);
+	margin-bottom: 1.5rem;
+}
+
+/* Grade de Pacotes */
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Define o layout responsivo */
+	gap: 1.5rem; /* Espaçamento entre os cartões */
+	justify-content: center; /* Centraliza o conteúdo no grid */
+}
+
+/* Cartões de Pacotes */
+.card {
+	background-color: var(--color-white);
+	border-radius: 8px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+	overflow: hidden; /* Garante que o conteúdo respeite os limites do cartão */
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+	transform: scale(1.05);
+	box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Wrapper da Imagem */
+.imageWrapper {
+	width: 100%; /* Respeita a largura do cartão */
+	height: 150px; /* Altura fixa para imagens */
+	overflow: hidden;
+}
+
+.image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* Ajusta a imagem ao espaço disponível */
+}
+
+/* Estilo do Conteúdo do Cartão */
+.cardTitle {
+	font-size: 1.5rem;
+	color: var(--color-secondary);
+	margin: 1rem 0 0.5rem;
+	padding: 0 1rem;
+}
+
+.cardDescription {
+	font-size: 1rem;
+	color: var(--color-secondary);
+	margin-bottom: 1rem;
+	padding: 0 1rem;
+	text-align: justify;
+}
+
+.cardPrice {
+	font-size: 1.25rem;
+	color: var(--color-primary);
+	font-weight: bold;
+	margin-bottom: 1.5rem;
+	padding: 0 1rem;
+}
+
+/* Ações do Cartão */
+.cardActions {
+	display: flex;
+	justify-content: space-between;
+	gap: 0.5rem;
+	padding: 0 1rem 1rem;
+}
+
+.detailsButton {
+	padding: 0.5rem 1rem;
+	background-color: var(--color-background-secondary);
+	color: var(--color-secondary);
+	border-radius: 4px;
+	text-decoration: none;
+	font-size: 1rem;
+	transition: background-color 0.3s ease;
+}
+
+.detailsButton:hover {
+	background-color: var(--color-hover-primary);
+	color: var(--color-white);
+}
+
+.buyButton {
+	padding: 0.5rem 1rem;
+	background-color: var(--color-primary);
+	color: var(--color-white);
+	border: none;
+	border-radius: 4px;
+	font-size: 1rem;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.buyButton:hover {
+	background-color: var(--color-hover-primary);
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+	.grid {
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajusta as colunas no tablet */
+	}
+
+	.title {
+		font-size: 2.5rem;
+	}
+
+	.card {
+		padding: 1rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	.grid {
+		grid-template-columns: repeat(3, 1fr); /* 3 colunas no desktop */
+	}
+
+	.title {
+		font-size: 3rem;
+	}
+}

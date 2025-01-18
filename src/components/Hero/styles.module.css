@@ -65,6 +65,7 @@
 @media (min-width: 1200px) {
 	.hero {
 		background-size: contain;
+		background-repeat: repeat-x;
 	}
 
 	.title {
