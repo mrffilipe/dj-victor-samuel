@@ -57,8 +57,11 @@ const Hero = () => {
 					<h1 className={styles.title}>DJ Victor</h1>
 					<p className={styles.subtitle}>Transformando Momentos em Memórias</p>
 					<div className={styles.actions}>
-						<Link className={styles.cta_btn} href="#pacotes">
+						<Link className={styles.packages_btn} href="#pacotes">
 							Veja os Pacotes
+						</Link>
+						<Link className={styles.contact_btn} href="#contato">
+							Entre em Contato
 						</Link>
 					</div>
 				</div>

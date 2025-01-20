@@ -1,16 +1,16 @@
 import styles from "./styles.module.css";
 
-import ProfilePicture from "@/assets/img/about-dj-section.jpg";
+import ProfilePicture from "@/assets/img/aboutdj.jpg";
 
 const AboutDJ = () => {
 	return (
 		<section className={styles.about}>
 			<div className={styles.container}>
-				<div className={styles.imageWrapper}>
+				<div className={styles.image_wrapper}>
 					<img
-						className={styles.image}
 						src={ProfilePicture.src}
 						alt="DJ Victor em um evento"
+						draggable={false}
 					/>
 				</div>
 				<div className={styles.content}>

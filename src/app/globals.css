@@ -5,25 +5,22 @@
 }
 
 :root {
-	/* Paleta principal */
-	--color-primary: #a8d5ba; /* Verde Suave */
-	--color-secondary: #1e5631; /* Verde Escuro */
-	--color-white: #ffffff; /* Branco */
-	--color-light-gray: #eaeaea; /* Cinza Claro */
-	--color-gold: #ffd700; /* Dourado */
+	--color-primary: #16697a;
+	--color-secondary: #ffa62b;
+	--color-white: #ffffff;
+	--color-black: #000000;
 
-	/* Cores complementares */
-	--color-hover-primary: #8cc29b; /* Verde Suave Escuro */
-	--color-hover-secondary: #ffc107; /* Dourado Claro */
+	--color-hover-primary: #8cc29b;
+	--color-hover-secondary: #ffc107;
 
-	--color-border: #d4d4d4; /* Cinza Médio */
+	--color-border: #d4d4d4;
 
-	--color-background: #f7f7f7; /* Cinza Muito Claro */
-	--color-background-secondary: #f1edea; /* Bege Claro */
+	--color-background: #f8f1f1;
+	--color-background-secondary: #16697a;
 
-	--color-shadow: rgba(0, 0, 0, 0.3); /* Sombra para profundidade */
+	--color-shadow: rgba(0, 0, 0, 0.3);
 
-	--vertical-padding: 96px;
+	--vertical-padding: 36px;
 	--horizontal-padding: 16px;
 }
 
